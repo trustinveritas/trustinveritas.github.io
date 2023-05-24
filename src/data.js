@@ -3,6 +3,9 @@ import { Icon } from "@iconify/react";
 
 // Projects Images (add your images to the images directory and import below)
 import Logo from "./images/logo.svg";
+import BlogIcon from "./images/BlogIcon.png";
+import XSSJPG from "./images/XSS-JPG.png";
+import CyberSecurityDontGetHacked from "./images/dark_with_white_background.png";
 
 // Hero Images (add your images to the /images directory with the same names)
 import HeroLight from "./images/hero-light.jpg";
@@ -15,10 +18,11 @@ export { HeroDark as Dark };
  **************************************************************
   Add your GitHub username (string - "YourUsername") below.
 */
-export const githubUsername = "Your GitHub username here";
+export const githubUsername = "trustinveritas";
 
 // Blog link icon - https://icon-sets.iconify.design/
-export const Blog = <Icon icon="ph:link-bold" />;
+// export const Blog = <Icon icon="ph:link-bold" />;
+export const Blog = <img src={BlogIcon} alt="Blog Logo" />;
 
 /* About Me
  **************************************************************
@@ -49,33 +53,33 @@ export const skillData = [
   },
   {
     id: 4,
-    skill: <Icon icon="ri:bootstrap-fill" className="display-4" />,
-    name: "BootStrap",
+    skill: <Icon icon="file-icons:yara" className="display-4" />,
+    name: "YARA",
   },
   {
     id: 5,
-    skill: <Icon icon="mdi:react" className="display-4" />,
-    name: "React",
+    skill: <Icon icon="teenyicons:python-solid" className="display-4" />,
+    name: "Python",
   },
   {
     id: 6,
-    skill: <Icon icon="file-icons:styledcomponents" className="display-4" />,
-    name: "Styled Components",
+    skill: <Icon icon="mdi:bash" width="80" height="80" className="display-4" />,
+    name: "Bash",
   },
   {
     id: 7,
-    skill: <Icon icon="akar-icons:redux-fill" className="display-4" />,
-    name: "Redux",
+    skill: <Icon icon="file-icons:nmap" width="70" height="70" className="display-4" />,
+    name: "nmap",
   },
   {
     id: 8,
-    skill: <Icon icon="bi:git" className="display-4" />,
-    name: "Git",
+    skill: <Icon icon="mdi:powershell" className="display-4" />,
+    name: "PowerShell",
   },
   {
     id: 9,
-    skill: <Icon icon="fa6-brands:square-github" className="display-4" />,
-    name: "GitHub",
+    skill: <Icon icon="simple-icons:wireshark" className="display-4" />,
+    name: "Wireshark",
   },
 ];
 
@@ -86,13 +90,17 @@ export const resume = null;
  ************************************************************** 
   List the repo names (string - "your-repo-name") you want to include (they will be sorted alphabetically). If empty, only the first 3 will be included.
 */
-export const filteredProjects = ["example-1", "example-2", "example-3"];
+export const filteredProjects = ["pentest-project-site", "XSS-IN-JPG"];
 
 // Replace the defualt GitHub image for matching repos below (images imported above - lines 4-5)
 export const projectCardImages = [
   {
-    name: "example-1",
-    image: Logo,
+    name: "XSS-IN-JPG",
+    image: XSSJPG,
+  },
+  {
+    name: "pentest-project-site",
+    image: CyberSecurityDontGetHacked,
   },
 ];
 
